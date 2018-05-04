@@ -54,6 +54,9 @@ ZSH_THEME="agnoster"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+# Add NPM path
+export PATH=$PATH:$(npm bin)
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -62,6 +65,7 @@ plugins=(
   git
   node
   nvm
+  npx
   github
   ssh-agent
   gem
@@ -109,3 +113,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Add Golang path
 export PATH=$PATH:/usr/local/go/bin:$HOME/.local/bin
+
+# tabtab source for electron-forge package
+# uninstall by removing these lines or running `tabtab uninstall electron-forge`
+[[ -f /home/drazisil/github/scpx/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /home/drazisil/github/scpx/node_modules/tabtab/.completions/electron-forge.zsh
