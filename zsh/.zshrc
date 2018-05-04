@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/drazisil/.oh-my-zsh
+  export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -110,6 +110,9 @@ source $ZSH/oh-my-zsh.sh
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+alias graylog-connect='ssh -f -N -L 9000:graylog-primary.infra.circleci.com:80 jumphost'
+alias graylog-disconnect='pkill -f graylog'
 
 # Add Golang path
 export PATH=$PATH:/usr/local/go/bin:$HOME/.local/bin
