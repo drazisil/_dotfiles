@@ -72,7 +72,6 @@ plugins=(
   colorize
   man
   ssh-agent
-  ubuntu
 )
 
 source $ZSH/oh-my-zsh.sh
