@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/drazisil'
+let g:netrw_dirhist_2='/Users/drazisil/circle'
+let g:netrw_dirhist_3='/Users/drazisil/github/buildinfo/.circleci'
+let g:netrw_dirhist_4='/Users/drazisil/.vim'
+let g:netrw_dirhist_5='/Users/drazisil/github/ansible-playbooks/roles/nusenu.relayor/playbook-examples/non-exit-relays'
+let g:netrw_dirhist_6='/Users/drazisil/.oh-my-zsh/plugins/ubuntu'
+let g:netrw_dirhist_7='/Users/drazisil/github/node-mem'
