@@ -3,6 +3,7 @@
 
 # Path to your oh-my-zsh installation.
   export ZSH=~/.oh-my-zsh
+  export GOPATH=~/go
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -62,6 +63,7 @@ export PATH=$PATH:$(npm bin)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  golang
   git
   node
   nvm
@@ -109,6 +111,7 @@ source $ZSH/oh-my-zsh.sh
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$GOPATH/bin
 
 alias graylog-connect='ssh -f -N -L 9000:graylog-primary.infra.circleci.com:80 jumphost'
 alias graylog-disconnect='pkill -f graylog'
