@@ -113,7 +113,7 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$GOPATH/bin
 
-alias graylog-connect='ssh -f -N -L 9000:graylog-primary.infra.circleci.com:80 jumphost'
+alias graylog-connect='ssh -f -N -L 9000:graylog-primary.infra.circleci.com:80 jumphost-base.prod.circleci.com'
 alias graylog-disconnect='pkill -f graylog'
 
 # Add Golang path
