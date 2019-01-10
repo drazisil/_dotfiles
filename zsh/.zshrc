@@ -116,7 +116,7 @@ export PATH=$PATH:$GOPATH/bin
 alias graylog-connect='ssh -f -N -L 9000:graylog-primary.infra.circleci.com:80 circle@jumphost-base.prod.circleci.com'
 alias graylog-disconnect='pkill -f graylog'
 alias warehouse-connect='ssh -f -N -L 9001:warehouse.ce1pml9wvwke.us-east-1.rds.amazonaws.com:5432 circle@jumphost-base.prod.circleci.com'
-alias warehouse-disconnect=''pkill -f warehouse'
+alias warehouse-disconnect='pkill -f warehouse'
 
 # Add Golang path
 export PATH=$PATH:/usr/local/go/bin:$HOME/.local/bin
