@@ -70,7 +70,9 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
-PATH="~/.local/bin/;$PATH"
+typeset -U path
+path=(~/.local/bin $path)
+export PATH
 
 source $ZSH/oh-my-zsh.sh
 
